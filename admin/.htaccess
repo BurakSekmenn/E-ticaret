@@ -1,0 +1,6 @@
+RewriteEngine On
+
+#seo url oluşturma
+  RewriteCond %{REQUEST_FILENAME}\.php -f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ $1.php
